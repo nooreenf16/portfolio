@@ -3,7 +3,7 @@
 import * as THREE from 'three';
 import { useRef, useState, useEffect, memo, ReactNode } from 'react';
 import { Canvas, createPortal, useFrame, useThree, ThreeElements } from '@react-three/fiber';
-import { Html } from '@react-three/drei';
+import { Image } from '@react-three/drei';
 import {
   useFBO,
   useGLTF,
@@ -29,9 +29,10 @@ interface FluidGlassProps {
   lensProps?: ModeProps;
   barProps?: ModeProps;
   cubeProps?: ModeProps;
+  imgSrc?: string;
 }
 
-export default function FluidGlass({ mode = 'lens', lensProps = {}, cubeProps = {} }: FluidGlassProps) {
+export default function FluidGlass({ mode = 'lens', lensProps = {}, cubeProps = {}, imgSrc = "" }: FluidGlassProps) {
   const Wrapper = mode === 'cube' ? Cube : Lens;
   const rawOverrides = mode === 'cube' ? cubeProps : lensProps;
 
@@ -53,7 +54,7 @@ export default function FluidGlass({ mode = 'lens', lensProps = {}, cubeProps = 
       <ScrollControls damping={0.2} pages={3} distance={0}>
         <Wrapper modeProps={modeProps}>
           <Scroll>
-            <Typography />
+            <Typography imgSrc={imgSrc} />
           </Scroll>
           <Scroll />
           <Preload />
@@ -168,59 +169,17 @@ function Cube({ modeProps, ...p }: { modeProps?: ModeProps } & MeshProps) {
   return <ModeWrapper glb="/assets/3d/cube.glb" geometryKey="Cube" followPointer modeProps={modeProps} {...p} />;
 }
 
-function Typography() {
-  const DEVICE = {
-    mobile: { fontSize: 0.1 },
-    tablet: { fontSize: 0.1 },
-    desktop: { fontSize: 0.2 }
-  };
-  const getDevice = () => {
-    const w = window.innerWidth;
-    return w <= 639 ? 'mobile' : w <= 1023 ? 'tablet' : 'desktop';
-  };
-
-  const [device, setDevice] = useState<keyof typeof DEVICE>(getDevice());
-
-  useEffect(() => {
-    const onResize = () => setDevice(getDevice());
-    window.addEventListener('resize', onResize);
-    return () => window.removeEventListener('resize', onResize);
-  }, []);
-
-  const { fontSize } = DEVICE[device];
-
-  // const [currentText, setCurrentText] = useState('');
-  // const [currentIndex, setCurrentIndex] = useState(0);
-
-  // const text = "Software Engineer";
-  // const delay = 200;
-
-  // useEffect(() => {
-  //   if (currentIndex < text.length) {
-  //     const timeout = setTimeout(() => {
-  //       setCurrentText((prev) => prev + text[currentIndex]);
-  //       setCurrentIndex((prev) => prev + 1);
-  //     }, delay);
-
-  //     return () => clearTimeout(timeout);
-  //   }
-  // }, [currentIndex, delay, text]);
+function Typography({ imgSrc }: { imgSrc: string }) {
+  const { viewport } = useThree()
 
   return (
-    <Text
-      position={[0, 0, 12]}
-      fontSize={fontSize}
-      letterSpacing={-0.05}
-      outlineWidth={0}
-      outlineBlur="20%"
-      outlineColor="#000"
-      outlineOpacity={0.5}
-      color="white"
-      anchorX="center"
-      anchorY="middle"
-    >
-      {"\n\t"}Reach me at: nooreenf16@gmail.com or 314-393-6573. {"\n\t\t"} ---- ps try hovering here!
-    </Text>
+    <Image
+      url={imgSrc}  // your image path
+      position={[0, 0, 0]}
+      // scale={[1.8, 0.6]}               // width, height
+      scale={[viewport.width, viewport.height]}
+      transparent
+    />
 
   );
 }
