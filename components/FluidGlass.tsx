@@ -3,6 +3,7 @@
 import * as THREE from 'three';
 import { useRef, useState, useEffect, memo, ReactNode } from 'react';
 import { Canvas, createPortal, useFrame, useThree, ThreeElements } from '@react-three/fiber';
+import { Html } from '@react-three/drei';
 import {
   useFBO,
   useGLTF,
@@ -170,8 +171,8 @@ function Cube({ modeProps, ...p }: { modeProps?: ModeProps } & MeshProps) {
 function Typography() {
   const DEVICE = {
     mobile: { fontSize: 0.1 },
-    tablet: { fontSize: 0.3 },
-    desktop: { fontSize: 0.4 }
+    tablet: { fontSize: 0.1 },
+    desktop: { fontSize: 0.2 }
   };
   const getDevice = () => {
     const w = window.innerWidth;
@@ -188,6 +189,23 @@ function Typography() {
 
   const { fontSize } = DEVICE[device];
 
+  // const [currentText, setCurrentText] = useState('');
+  // const [currentIndex, setCurrentIndex] = useState(0);
+
+  // const text = "Software Engineer";
+  // const delay = 200;
+
+  // useEffect(() => {
+  //   if (currentIndex < text.length) {
+  //     const timeout = setTimeout(() => {
+  //       setCurrentText((prev) => prev + text[currentIndex]);
+  //       setCurrentIndex((prev) => prev + 1);
+  //     }, delay);
+
+  //     return () => clearTimeout(timeout);
+  //   }
+  // }, [currentIndex, delay, text]);
+
   return (
     <Text
       position={[0, 0, 12]}
@@ -201,7 +219,8 @@ function Typography() {
       anchorX="center"
       anchorY="middle"
     >
-      Software Engineer
+      {"\n\t"}Reach me at: nooreenf16@gmail.com or 314-393-6573. {"\n\t\t"} ---- ps try hovering here!
     </Text>
+
   );
 }

@@ -28,6 +28,66 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+
+        <section className="m-10">
+          <h1 className="m-10 pt-10 text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500">
+            PROJECTS
+          </h1>
+
+          <div className="m-10 grid grid-cols-[repeat(auto-fit,_minmax(350px,_1fr))] gap-6">
+            <div className="mx-5 bg-[#1a1a1a] rounded-lg shadow-lg p-6 text-[#eee] transition-transform duration-300 ease-in-out hover:scale-105">
+              <h3 className="font-bold mb-2 text-xl">Course Management System (Java)</h3>
+              <p>Developed a full-stack course management system (repo: Course-Management), using Java for backend logic and HTML for frontend, enabling CRUD operations for students, courses and enrollments.
+                • Designed architecture for scalability and maintainability: clear separation of concerns, data models and user interface.</p>
+            </div>
+
+            <div className="mx-5 bg-[#1a1a1a] rounded-lg shadow-lg p-6 text-[#eee] transition-transform duration-300 ease-in-out hover:scale-105">
+              <h3 className="font-bold mb-2 text-xl">Multiple Partial Object Detection in a Single Image using Segmentation and Elliptical Symmetry - Research GitHub
+              </h3>
+              <p>A software which uses image processing and geometric operations to identify the location & labeling of objects in image
+                • Implemented using segmentation of all objects, image reconstruction and performing a detection algorithm.
+                Tools used: Python, Numpy, openCV, Math.</p>
+            </div>
+
+            <div className="mx-5 bg-[#1a1a1a] rounded-lg shadow-lg p-6 text-[#eee] transition-transform duration-300 ease-in-out hover:scale-105">
+              <h3 className="font-bold mb-2 text-xl">Event Management Website ( Full Stack )</h3>
+              <p>• A website used to manage all events on user and admin end with dynamic user interface and multiple endpoints.
+                • Designed responsive frontend using Figma, HTML, CSS, JavaScript, Bootstrap.
+                • Integrated Flask backend, MySQL database, and REST APIs for data management and authentication services.
+                Tools used: Python, Flask, HTML, Javascript, CSS, Bootstrap, MySQL, UML, REST APIs, MongoDB, Figma</p>
+            </div>
+
+            <div className="mx-5 bg-[#1a1a1a] rounded-lg shadow-lg p-6 text-[#eee] transition-transform duration-300 ease-in-out hover:scale-105">
+              <h3 className="font-bold mb-2 text-xl">Vehicle Classification and Counting</h3>
+              <p>• Authored a Python solution (repo: Vehicle-Classification-and-Counting) for classNameifying vehicles and counting traffic flow from video/image data—useful in smart-city and traffic-monitoring contexts.
+                • Processed real-world data, extracted features, and developed evaluation metrics to validate classNameification and counting accuracy.</p>
+            </div>
+
+            <div className="mx-5 bg-[#1a1a1a] rounded-lg shadow-lg p-6 text-[#eee] transition-transform duration-300 ease-in-out hover:scale-105">
+              <h3 className="font-bold mb-2 text-xl">NLP Project</h3>
+              <p>• Built a collection of machine-learning and data-science projects (repo: ML-and-DS) using Jupyter notebooks: data cleaning, feature engineering, model training and evaluation across different datasets.
+                • Showcased versatility in regression, classNameification and clustering workflows.</p>
+            </div>
+
+            <div className="mx-5 bg-[#1a1a1a] rounded-lg shadow-lg p-6 text-[#eee] transition-transform duration-300 ease-in-out hover:scale-105">
+              <h3 className="font-bold mb-2 text-xl">ML & Data-Science Portfolio</h3>
+              <p>• Conducted exploratory work in natural language processing (repo: NLP) including topic modeling, sentiment analysis and text-classNameification pipelines using Python.
+                • Demonstrated ability to preprocess text, apply NLP frameworks, and evaluate model results.</p>
+            </div>
+
+            <div className="mx-5 bg-[#1a1a1a] rounded-lg shadow-lg p-6 text-[#eee] transition-transform duration-300 ease-in-out hover:scale-105">
+              <h3 className="font-bold mb-2 text-xl">LLM Workshop / Cursor Integration / Firebase Studio</h3>
+              <p>• Built a Python-based framework (LLM-Workshop-Cursor) connecting large-language-model workflows via Cursor and Firebase Studio; implemented modular code generation and prompt pipelines.
+                • Automated prompt-to-application flow, helping streamline developer interactions with LLMs and enhancing tool productivity.</p>
+            </div>
+
+          </div>
+        </section>
+
+        {/* <!-- Footer --> */}
+        <footer>
+          <p>© 2025 Nooreen. All Rights Reserved.</p>
+        </footer>
       </body>
     </html>
   );
