@@ -7,7 +7,7 @@ import LiquidEther from '@/components/LiquidEther';
 
 export default function Home() {
   return (
-    <div style={{ height: '770px', position: 'relative' }}>
+    <div style={{ height: '780px', position: 'relative' }}>
       <div className="fixed top-0 left-0 w-full z-50">
         <nav className="bg-white/10 backdrop-blur-lg border-b border-white/20 px-8 py-4 flex items-center justify-between">
 
@@ -15,6 +15,9 @@ export default function Home() {
           <div className="flex space-x-6">
             <a href="#" className="text-white hover:text-purple-400 transition">
               Home *
+            </a>
+            <a href="#experience" className="text-white hover:text-purple-400 transition">
+              Experience
             </a>
             <a href="#contact" className="text-white hover:text-purple-400 transition">
               Contact
@@ -31,7 +34,7 @@ export default function Home() {
         </nav>
       </div>
 
-      <div className="relative h-[770px] w-full overflow-hidden demo-container">
+      <div className="relative h-[780px] w-full overflow-hidden demo-container">
         {/* LiquidEther background */}
         <div className="absolute inset-0 w-full h-full">
           <LiquidEther colors={['#5227FF', '#FF9FFC', '#B19EEF']}
@@ -71,7 +74,7 @@ export default function Home() {
               <p>REST APIs, JSON, Postman, Spring Boot, Microservices, Flask</p>
             </div>
             <div className="mx-2 bg-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-5 w-70 text-center text-white shadow-lg">
-              <h2 className="text-xl font-bold mb-4">Frontend Developement</h2>
+              <h2 className="text-xl font-bold mb-4">Frontend Development</h2>
               <p>React.js, Usability Testing</p>
             </div>
             <div className="mx-2 bg-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-5 w-70 text-center text-white shadow-lg">

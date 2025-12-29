@@ -39,7 +39,7 @@ export default function Projects() {
             github: "https://github.com/nooreenf16/Course-Management",
             imgPath: "",
             desc: "Developed a Backend course management service (repo: Course-Management), using Java for backend logic, enabling CRUD operations for students, courses and enrollments. • Designed architecture for scalability and maintainability: clear separation of concerns, data models and user interface.",
-            tools: "Java, Springboot, Kafka, ReactJS"
+            tools: "Java, Springboot, Kafka, Docker, Microservices"
         },
         {
             title: "ML & Data-Science Portfolio",
@@ -68,8 +68,8 @@ export default function Projects() {
     return (
         //<section className="m-10 bg-[radial-gradient(circle_1000px_at_center,_#500140_0%,#0A0A0A_80%)]" id="projects"> */}
         <section className="mt-10 ml-10 bg-gradient-to-br from-[#0a0a0a] via-[#0a0a0a] to-[#500140]" id="projects">
-            <h1 className=" text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500">
-                PROJECTS <span className="text-xs">coming soon: cube lens</span>
+            <h1 className=" text-4xl font-bold text-white text-center">
+                My Projects <span className="text-xs">coming soon: cube lens</span>
             </h1>
 
             <div className="mt-10 grid grid-cols-[repeat(auto-fit,_minmax(450px,_1fr))] gap-6">
