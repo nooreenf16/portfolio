@@ -84,10 +84,6 @@ export const ContactForm: React.FC = () => {
 
                 <button
                     type="submit"
-                    onClick={(e) => {
-                        e.preventDefault();
-                        alert("Message sent!")
-                    }}
                     className="w-full py-3 mt-4 rounded-lg bg-purple-600 hover:bg-purple-700 text-white font-semibold transition-colors duration-300"
                 >
                     Send Message
