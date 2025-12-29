@@ -1,9 +1,46 @@
 "use client";
+import React, { FormEvent } from "react";
 {/* CONTACT FORM */ }
-export default function ContactForm() {
+export const ContactForm: React.FC = () => {
+    const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+
+        const target = e.target as typeof e.target & {
+            name: { value: string };
+            email: { value: string };
+            message: { value: string };
+        };
+
+        const data = {
+            name: target.name.value,
+            email: target.email.value,
+            message: target.message.value,
+        };
+
+        try {
+            const res = await fetch('/api/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data),
+            });
+
+            if (res.ok) {
+                alert('Message sent!');
+                target.name.value = '';
+                target.email.value = '';
+                target.message.value = '';
+            } else {
+                alert('Failed to send message.');
+            }
+        } catch (error) {
+            console.error('Error submitting form:', error);
+            alert('An error occurred.');
+        }
+    };
+
     return (
         <section id="contact" className="flex justify-center items-center min-h-screen bg-gradient-to-tr from-[#0a0a0a] via-[#0a0a0a] to-[#500140] px-6">
-            <form className="w-full max-w-lg bg-white/5 backdrop-blur-md border border-white/20 rounded-xl p-8 shadow-lg">
+            <form onSubmit={handleSubmit} className="w-full max-w-lg bg-white/5 backdrop-blur-md border border-white/20 rounded-xl p-8 shadow-lg">
                 <h2 className="text-3xl font-bold text-white mb-6 text-center">Contact Me</h2>
 
                 {/* Name */}
