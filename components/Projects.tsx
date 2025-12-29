@@ -21,6 +21,13 @@ export default function Projects() {
             tools: "PostGres, Flask, JWT, Authentication, Routing, JS, Bootstrap, "
         },
         {
+            title: "Course Management System (Java Springboot Backend)",
+            github: "https://github.com/nooreenf16/Course-Management",
+            imgPath: "assets/java.png",
+            desc: "Developed a Backend course management service (repo: Course-Management), using Java for backend logic, enabling CRUD operations for students, courses and enrollments. • Designed architecture for scalability and maintainability: clear separation of concerns, data models and user interface.",
+            tools: "Java, Springboot, Kafka, Docker, Microservices"
+        },
+        {
             title: "Vehicle Classification and Counting",
             github: "https://github.com/nooreenf16/Vehicle-Classification-and-Counting",
             imgPath: "assets/vehicle.png",
@@ -34,13 +41,7 @@ export default function Projects() {
             desc: "• Built a collection of machine-learning and data-science projects (repo: ML-and-DS) using Jupyter notebooks: data cleaning, feature engineering, model training and evaluation across different datasets. • Showcased versatility in regression, classNameification and clustering workflows.",
             tools: "Python, Numpy, Pandas, Scikit, Matplotlib, Machine Learning Algorithms"
         },
-        {
-            title: "Course Management System (Java)",
-            github: "https://github.com/nooreenf16/Course-Management",
-            imgPath: "",
-            desc: "Developed a Backend course management service (repo: Course-Management), using Java for backend logic, enabling CRUD operations for students, courses and enrollments. • Designed architecture for scalability and maintainability: clear separation of concerns, data models and user interface.",
-            tools: "Java, Springboot, Kafka, Docker, Microservices"
-        },
+
         {
             title: "ML & Data-Science Portfolio",
             github: "https://github.com/nooreenf16/ML-and-DS",
