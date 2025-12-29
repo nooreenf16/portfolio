@@ -2,7 +2,7 @@
 {/* CONTACT FORM */ }
 export default function ContactForm() {
     return (
-        <section className="flex justify-center items-center min-h-screen bg-gradient-to-tr from-[#0a0a0a] via-[#0a0a0a] to-[#500140] px-6">
+        <section id="contact" className="flex justify-center items-center min-h-screen bg-gradient-to-tr from-[#0a0a0a] via-[#0a0a0a] to-[#500140] px-6">
             <form className="w-full max-w-lg bg-white/5 backdrop-blur-md border border-white/20 rounded-xl p-8 shadow-lg">
                 <h2 className="text-3xl font-bold text-white mb-6 text-center">Contact Me</h2>
 

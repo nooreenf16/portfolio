@@ -36,7 +36,7 @@ export default function RootLayout({
 
         {/* <!-- Footer --> */}
         <footer>
-          <p>© 2025 Nooreen. All Rights Reserved.</p>
+          <p>© 2025 Nooreen. All Rights Reserved. Fluid Glass, Fluid Ether credit to React Bits</p>
         </footer>
       </body>
     </html>

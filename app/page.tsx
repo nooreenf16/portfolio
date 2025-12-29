@@ -14,7 +14,7 @@ export default function Home() {
           {/* Navigation Links */}
           <div className="flex space-x-6">
             <a href="#" className="text-white hover:text-purple-400 transition">
-              Home
+              Home *
             </a>
             <a href="#contact" className="text-white hover:text-purple-400 transition">
               Contact
@@ -58,18 +58,6 @@ export default function Home() {
           <div>
           </div>
           {/* SKILLS WITH GLASS */}
-          {/* <div className="flex flex-row ">
-            <div className="mx-3 mt-10 bg-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-3 px-5 text-center text-white shadow-lg">
-              <h2 className="text-2xl font-bold">Avid Thinker</h2>
-            </div>
-            <div className="mt-10 bg-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-3 px-5 text-center text-white shadow-lg">
-              <h2 className="text-2xl font-bold">Continuous Learner</h2>
-            </div>
-            <div className="mt-10 bg-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-3 px-5 text-center text-white shadow-lg">
-              <h2 className="text-2xl font-bold">Cosmic Wonderer</h2>
-            </div>
-          </div> */}
-
           <div className="relative mt-10 flex flex-row justify-around">
             <div className="mx-2 bg-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-5 w-70 text-center text-white shadow-lg">
               <h2 className="text-xl font-bold mb-4">Languages</h2>
@@ -96,22 +84,6 @@ export default function Home() {
         </div>
 
       </div>
-
-      {/* HEADER WITH FLUID GLASS */}
-      {/* <div style={{ width: "300px" }}>
-
-        <FluidGlass
-          mode="lens" // or "bar", "cube"
-          lensProps={{
-            scale: 0.25,
-            ior: 1.15,
-            thickness: 5,
-            chromaticAberration: 0.1,
-            anisotropy: 0.01
-          }}
-        // cubeProps={} // add specific props if using cube mode
-        />
-      </div> */}
     </div >
   );
 }
