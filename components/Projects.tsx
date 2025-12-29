@@ -16,16 +16,16 @@ export default function Projects() {
         {
             title: "Multiple Partial Object Detection in a Single Image using Segmentation and Elliptical Symmetry - Research",
             github: "https://github.com/nooreenf16/Multiple-Partial-Object-Detection",
-            imgPath: "assets/temp.png",
+            imgPath: "assets/beeproject.png",
             desc: "A software which uses image processing and geometric operations to identify the location & labeling of objects in image • Implemented using segmentation of all objects, image reconstruction and performing a detection algorithm.",
             tools: "Python, Numpy, openCV, Math."
         },
         {
             title: "Event Management Website ( Full Stack )",
             github: "https://github.com/nooreenf16/EventManagement",
-            imgPath: "assets/temp.png",
+            imgPath: "assets/event.png",
             desc: "• A website used to manage all events on user and admin end with dynamic user interface and multiple endpoints. • Designed responsive frontend using Figma, HTML, CSS, JavaScript, Bootstrap. • Integrated Flask backend, MySQL database, and REST APIs for data management and authentication services.",
-            tools: ""
+            tools: "PostGres, Flask, JWT, Authentication, Routing, JS, Bootstrap, "
         },
         {
             title: "Vehicle Classification and Counting",
