@@ -29,7 +29,7 @@ export default function Home() {
               Resume
             </a>
           </div>
-          <span className="text-xs">P.S. try hovering over things</span>
+          <span className="text-xs text-white">P.S. try hovering over things</span>
 
         </nav>
       </div>

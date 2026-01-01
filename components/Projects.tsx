@@ -148,8 +148,8 @@ export default function Projects() {
                     </>}
             </div>
             <div className="mt-6 flex align-center justify-center ">
-                <button onClick={() => setShowMore(!showMore)} className="p-3 bg-white/5 backdrop-blur-md border border-white/20 rounded-xl">
-                    Show {showMore ? "Less" : "More"} v
+                <button onClick={() => setShowMore(!showMore)} className="p-3 text-white bg-white/5 backdrop-blur-md border border-white/20 rounded-xl">
+                    Show {showMore ? "Less ^" : "More v"}
                 </button>
             </div>
         </section>
