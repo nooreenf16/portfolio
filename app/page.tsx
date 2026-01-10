@@ -7,12 +7,12 @@ import LiquidEther from '@/components/LiquidEther';
 
 export default function Home() {
   return (
-    <div style={{ height: '780px', position: 'relative' }}>
+    <div style={{ minHeight: '100vh', position: 'relative' }}>
       <div className="fixed top-0 left-0 w-full z-50">
-        <nav className="bg-white/10 backdrop-blur-lg border-b border-white/20 px-8 py-4 flex items-center justify-between">
+        <nav className="bg-white/10 backdrop-blur-lg border-b border-white/20 px-4 sm:px-8 py-4 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
 
           {/* Navigation Links */}
-          <div className="flex space-x-6">
+          <div className="flex flex-wrap gap-4 md:space-x-6">
             <a href="#" className="text-white hover:text-purple-400 transition">
               Home *
             </a>
@@ -29,12 +29,12 @@ export default function Home() {
               Resume
             </a>
           </div>
-          <span className="text-xs text-white">P.S. try hovering over things</span>
+          <span className="text-xs text-white hidden lg:block">P.S. try hovering over things</span>
 
         </nav>
       </div>
 
-      <div className="relative h-[780px] w-full overflow-hidden demo-container">
+      <div className="relative h-screen w-full overflow-hidden demo-container">
         {/* LiquidEther background */}
         <div className="absolute inset-0 w-full h-full">
           <LiquidEther colors={['#5227FF', '#FF9FFC', '#B19EEF']}
@@ -56,40 +56,41 @@ export default function Home() {
         </div>
 
         {/* Content overlay */}
-        <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-white pointer-events-auto">
-          <h1 className="text-6xl font-bold mb-4">Nooreen Fatima</h1>
-          <p className="text-lg text-center max-w-md">
+        <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-white pointer-events-auto px-4 pt-20 pb-12 overflow-y-auto">
+          <h1 className="text-4xl sm:text-2xl md:text-6xl font-bold mb-4 text-center">Nooreen Fatima</h1>
+          <p className="text-base sm:text-lg text-center max-w-md mb-4">
             Software Engineer
           </p>
-          <div>
-          </div>
+
           {/* SKILLS WITH GLASS */}
-          <div className="relative mt-10 flex flex-row justify-around">
-            <div className="mx-2 bg-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-5 w-70 text-center text-white shadow-lg">
-              <h2 className="text-xl font-bold mb-4">Languages</h2>
-              <p>Python, Java, C/C++, SQL, JavaScript, TypeScript, HTML, CSS</p>
-            </div>
-            <div className="mx-2 bg-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-5 w-70 text-center text-white shadow-lg">
-              <h2 className="text-xl font-bold mb-4">Backend Development</h2>
-              <p>REST APIs, JSON, Postman, Spring Boot, Microservices, Flask</p>
-            </div>
-            <div className="mx-2 bg-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-5 w-70 text-center text-white shadow-lg">
-              <h2 className="text-xl font-bold mb-4">Frontend Development</h2>
-              <p>React.js, Usability Testing</p>
-            </div>
-            <div className="mx-2 bg-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-5 w-70 text-center text-white shadow-lg">
-              <h2 className="text-xl font-bold mb-4">Python Libraries</h2>
-              <p>OpenCV, Matplotlib, Pandas, Numpy, Scikit</p>
-            </div>
-            <div className="mx-2 bg-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-5 w-80 text-center text-white shadow-lg">
-              <h2 className="text-xl font-bold mb-4">Databases, Cloud & Tools</h2>
-              <p>PostgreSQL, MySQL, AWS (basic), GCP, Docker, Git, Linux, Cloudflare Workers, LLMs</p>
+          <div className="relative mt-6 sm:mt-10 w-full max-w-7xl px-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+              <div className="bg-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-5 text-center text-white shadow-lg">
+                <h2 className="text-xl font-bold mb-4">Languages</h2>
+                <p>Python, Java, C/C++, SQL, JavaScript, TypeScript, HTML, CSS</p>
+              </div>
+              <div className="bg-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-5 text-center text-white shadow-lg">
+                <h2 className="text-xl font-bold mb-4">Backend Development</h2>
+                <p>REST APIs, JSON, Postman, Spring Boot, Microservices, Flask</p>
+              </div>
+              <div className="bg-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-5 text-center text-white shadow-lg">
+                <h2 className="text-xl font-bold mb-4">Frontend Development</h2>
+                <p>React.js, Usability Testing</p>
+              </div>
+              <div className="bg-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-5 text-center text-white shadow-lg">
+                <h2 className="text-xl font-bold mb-4">Python Libraries</h2>
+                <p>OpenCV, Matplotlib, Pandas, Numpy, Scikit</p>
+              </div>
+              <div className="bg-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-5 text-center text-white shadow-lg sm:col-span-2 lg:col-span-1">
+                <h2 className="text-xl font-bold mb-4">Databases, Cloud & Tools</h2>
+                <p>PostgreSQL, MySQL, AWS (basic), GCP, Docker, Git, Linux, Cloudflare Workers, LLMs</p>
+              </div>
             </div>
           </div>
 
         </div>
 
       </div>
-    </div >
+    </div>
   );
 }

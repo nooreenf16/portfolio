@@ -68,14 +68,14 @@ export default function Projects() {
     ]
     return (
         //<section className="m-10 bg-[radial-gradient(circle_1000px_at_center,_#500140_0%,#0A0A0A_80%)]" id="projects"> */}
-        <section className="mt-10 ml-10 bg-gradient-to-br from-[#0a0a0a] via-[#0a0a0a] to-[#500140]" id="projects">
-            <h1 className=" text-4xl font-bold text-white text-center">
+        <section className="mt-10 md:ml-10 bg-gradient-to-br from-[#0a0a0a] via-[#0a0a0a] to-[#500140]" id="projects">
+            <h1 className=" text-4xl font-bold text-white text-center mb-5">
                 My Projects <span className="text-xs">coming soon: cube lens</span>
             </h1>
 
-            <div className="mt-10 grid grid-cols-[repeat(auto-fit,_minmax(450px,_1fr))] gap-6">
-                {projectsData.slice(0, 3).map((p) =>
-                    <div key={p.github} className="mx-5 bg-white/5 backdrop-blur-md border border-white/20 rounded-xl shadow-lg p-6 text-[#eee] transition-transform duration-300 ease-in-out hover:scale-105">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 px-4 sm:px-6 lg:px-8">
+                {projectsData.slice(0, 3).map((p) => (
+                    <div key={p.github} className="bg-white/5 backdrop-blur-md border border-white/20 rounded-xl shadow-lg p-6 text-[#eee] transition-transform duration-300 ease-in-out hover:scale-105">
                         <h3 className="font-bold mb-2 text-xl">
                             {p.title}
                             <a className="text-pink-400 text-xs
@@ -87,7 +87,7 @@ export default function Projects() {
                                 href={"https://drive.google.com/file/d/1fcBucC_SYXiFgrJcMH1fdo9lJAS7QGcE/view?usp=sharing"}>Preview Link</a>}
                         </h3>
 
-                        {p.imgPath != "" && <div style={{ height: "200px" }}>
+                        {p.imgPath != "" && <div className="h-1/3 object-contain">
                             <FluidGlass
                                 mode="lens" // or "bar", "cube"
                                 lensProps={{
@@ -107,7 +107,7 @@ export default function Projects() {
                 from-purple-500 via-pink-500 to-purple-500 text-sm text-center">
                             {p.tools}</p>
                     </div>
-                )}
+                ))}
 
                 {showMore &&
                     <>
@@ -124,7 +124,7 @@ export default function Projects() {
                                         href={"https://drive.google.com/file/d/1fcBucC_SYXiFgrJcMH1fdo9lJAS7QGcE/view?usp=sharing"}>Preview Link</a>}
                                 </h3>
 
-                                {p.imgPath != "" && <div style={{ height: "200px" }}>
+                                {p.imgPath != "" && <div className="h-1/3">
                                     <FluidGlass
                                         mode="lens" // or "bar", "cube"
                                         lensProps={{
