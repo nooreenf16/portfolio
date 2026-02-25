@@ -25,9 +25,9 @@ export default function Home() {
             <a href="#projects" className="text-white hover:text-purple-400 transition">
               Projects
             </a>
-            <a href="https://drive.google.com/file/d/1VbMeVR3pUUCVuvoxg_0HFshJt1UvDf27/view?usp=sharing" className="text-white hover:text-purple-400 transition">
+            {/* <a href="https://drive.google.com/file/d/1VbMeVR3pUUCVuvoxg_0HFshJt1UvDf27/view?usp=sharing" className="text-white hover:text-purple-400 transition">
               Resume
-            </a>
+            </a> */}
           </div>
           <span className="text-xs text-white hidden lg:block">P.S. try hovering over things</span>
 
