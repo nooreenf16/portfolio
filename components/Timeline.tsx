@@ -23,13 +23,13 @@ const experiences: Experience[] = [
         company: "University of Missouri - St. Louis",
         description: "TA and Software development.",
     },
-    {
-        startDate: "Nov 2022",
-        endDate: "May 2023",
-        role: "Software Data Science Engineer",
-        company: "Cognitive Cloud Analytics",
-        description: "5G research and software developement.",
-    },
+    // {
+    //     startDate: "Nov 2022",
+    //     endDate: "May 2023",
+    //     role: "Software Data Science Engineer",
+    //     company: "Cognitive Cloud Analytics",
+    //     description: "5G research and software developement.",
+    // },
     {
         startDate: "Feb 2022",
         endDate: "Oct 2022",
