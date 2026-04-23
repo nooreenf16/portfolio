@@ -2,6 +2,7 @@ import Header from "../components/header";
 import FluidGlass from "@/components/FluidGlass";
 import "./globals.css";
 import LiquidEther from '@/components/LiquidEther';
+import Link from "next/link";
 // import { Box, Text } from '@mui/material';
 
 
@@ -25,6 +26,13 @@ export default function Home() {
             <a href="#projects" className="text-white hover:text-purple-400 transition">
               Projects
             </a>
+            <Link
+              href="/inlineAi"
+              className="text-pink-600 border-2 border-pink-800"
+              title="Latest Project by Nooreen Fatima"
+            >
+              Inline AI
+            </Link>
             {/* <a href="https://drive.google.com/file/d/1VbMeVR3pUUCVuvoxg_0HFshJt1UvDf27/view?usp=sharing" className="text-white hover:text-purple-400 transition">
               Resume
             </a> */}
