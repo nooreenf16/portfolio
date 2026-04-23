@@ -27,7 +27,7 @@ export default function Home() {
               Projects
             </a>
             <Link
-              href="/inlineAi"
+              href="/inline-ai"
               className="text-pink-600 border-2 border-pink-800"
               title="Latest Project by Nooreen Fatima"
             >
