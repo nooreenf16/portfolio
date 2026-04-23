@@ -1,5 +1,6 @@
 import PromptInfoPage from "../components/PromptInfo";
 import SavedResponsesPage from "../components/SavedResp";
+import "../app/globals.css";
 
 export default function DocsHome() {
     return (
