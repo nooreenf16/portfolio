@@ -59,7 +59,7 @@ export default function PromptInfoPage() {
 
                 <div className="flex justify-end">
                     <button className="px-4 py-2 rounded-lg bg-black text-white hover:bg-gray-800">
-                        Back to Extension
+                        Back to Portfolio Website
                     </button>
                 </div>
 
