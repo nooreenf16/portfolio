@@ -3,102 +3,115 @@ import FluidGlass from "@/components/FluidGlass";
 import "./globals.css";
 import LiquidEther from '@/components/LiquidEther';
 import Link from "next/link";
+import { ContactForm } from "@/components/ContactForm";
+import Projects from "@/components/Projects";
+import Timeline from "@/components/Timeline";
 // import { Box, Text } from '@mui/material';
 
 
 export default function Home() {
   return (
-    <div style={{ minHeight: '100vh', position: 'relative' }}>
-      <div className="fixed top-0 left-0 w-full z-50">
-        <nav className="bg-white/10 backdrop-blur-lg border-b border-white/20 px-4 sm:px-8 py-4 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+    <>
+      <div style={{ minHeight: '100vh', position: 'relative' }}>
+        <div className="fixed top-0 left-0 w-full z-50">
+          <nav className="bg-white/10 backdrop-blur-lg border-b border-white/20 px-4 sm:px-8 py-4 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
 
-          {/* Navigation Links */}
-          <div className="flex flex-wrap gap-4 md:space-x-6">
-            <a href="#" className="text-white hover:text-purple-400 transition">
-              Home *
-            </a>
-            <a href="#experience" className="text-white hover:text-purple-400 transition">
-              Experience
-            </a>
-            <a href="#contact" className="text-white hover:text-purple-400 transition">
-              Contact
-            </a>
-            <a href="#projects" className="text-white hover:text-purple-400 transition">
-              Projects
-            </a>
-            <Link
-              href="/inline-ai"
-              className="text-pink-600 border-2 border-pink-800"
-              title="Latest Project by Nooreen Fatima"
-            >
-              Inline AI
-            </Link>
-            {/* <a href="https://drive.google.com/file/d/1VbMeVR3pUUCVuvoxg_0HFshJt1UvDf27/view?usp=sharing" className="text-white hover:text-purple-400 transition">
+            {/* Navigation Links */}
+            <div className="flex flex-wrap gap-4 md:space-x-6">
+              <a href="#" className="text-white hover:text-purple-400 transition">
+                Home *
+              </a>
+              <a href="#experience" className="text-white hover:text-purple-400 transition">
+                Experience
+              </a>
+              <a href="#contact" className="text-white hover:text-purple-400 transition">
+                Contact
+              </a>
+              <a href="#projects" className="text-white hover:text-purple-400 transition">
+                Projects
+              </a>
+              <Link
+                href="/inline-ai"
+                className="text-pink-600 border-2 border-pink-800"
+                title="Latest Project by Nooreen Fatima"
+              >
+                Inline AI
+              </Link>
+              {/* <a href="https://drive.google.com/file/d/1VbMeVR3pUUCVuvoxg_0HFshJt1UvDf27/view?usp=sharing" className="text-white hover:text-purple-400 transition">
               Resume
             </a> */}
-          </div>
-          <span className="text-xs text-white hidden lg:block">P.S. try hovering over things</span>
+            </div>
+            <span className="text-xs text-white hidden lg:block">P.S. try hovering over things</span>
 
-        </nav>
-      </div>
-
-      <div className="relative h-screen w-full overflow-hidden demo-container">
-        {/* LiquidEther background */}
-        <div className="absolute inset-0 w-full h-full">
-          <LiquidEther colors={['#5227FF', '#FF9FFC', '#B19EEF']}
-            mouseForce={20}
-            cursorSize={150}
-            isViscous={false}
-            viscous={30}
-            iterationsViscous={52}
-            iterationsPoisson={52}
-            resolution={0.2}
-            isBounce={false}
-            autoDemo={true}
-            autoSpeed={0.3}
-            autoIntensity={2.5}
-            takeoverDuration={0.55}
-            autoResumeDelay={1000}
-            autoRampDuration={0.4}
-          />
+          </nav>
         </div>
 
-        {/* Content overlay */}
-        <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-white pointer-events-auto px-4 pt-20 pb-12 overflow-y-auto">
-          <h1 className="text-4xl sm:text-2xl md:text-6xl font-bold mb-4 text-center">Nooreen Fatima</h1>
-          <p className="text-base sm:text-lg text-center max-w-md mb-4">
-            Software Engineer
-          </p>
+        <div className="relative h-screen w-full overflow-hidden demo-container">
+          {/* LiquidEther background */}
+          <div className="absolute inset-0 w-full h-full">
+            <LiquidEther colors={['#5227FF', '#FF9FFC', '#B19EEF']}
+              mouseForce={20}
+              cursorSize={150}
+              isViscous={false}
+              viscous={30}
+              iterationsViscous={52}
+              iterationsPoisson={52}
+              resolution={0.2}
+              isBounce={false}
+              autoDemo={true}
+              autoSpeed={0.3}
+              autoIntensity={2.5}
+              takeoverDuration={0.55}
+              autoResumeDelay={1000}
+              autoRampDuration={0.4}
+            />
+          </div>
 
-          {/* SKILLS WITH GLASS */}
-          <div className="relative mt-6 sm:mt-10 w-full max-w-7xl px-4">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
-              <div className="bg-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-5 text-center text-white shadow-lg">
-                <h2 className="text-xl font-bold mb-4">Languages</h2>
-                <p>Python, Java, C/C++, SQL, JavaScript, TypeScript, HTML, CSS</p>
-              </div>
-              <div className="bg-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-5 text-center text-white shadow-lg">
-                <h2 className="text-xl font-bold mb-4">Backend Development</h2>
-                <p>REST APIs, JSON, Postman, Spring Boot, Microservices, Flask</p>
-              </div>
-              <div className="bg-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-5 text-center text-white shadow-lg">
-                <h2 className="text-xl font-bold mb-4">Frontend Development</h2>
-                <p>React.js, Usability Testing</p>
-              </div>
-              <div className="bg-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-5 text-center text-white shadow-lg">
-                <h2 className="text-xl font-bold mb-4">Python Libraries</h2>
-                <p>OpenCV, Matplotlib, Pandas, Numpy, Scikit</p>
-              </div>
-              <div className="bg-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-5 text-center text-white shadow-lg sm:col-span-2 lg:col-span-1">
-                <h2 className="text-xl font-bold mb-4">Databases, Cloud & Tools</h2>
-                <p>PostgreSQL, MySQL, AWS (basic), GCP, Docker, Git, Linux, Cloudflare Workers, LLMs</p>
+          {/* Content overlay */}
+          <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-white pointer-events-auto px-4 pt-20 pb-12 overflow-y-auto">
+            <h1 className="text-4xl sm:text-2xl md:text-6xl font-bold mb-4 text-center">Nooreen Fatima</h1>
+            <p className="text-base sm:text-lg text-center max-w-md mb-4">
+              Software Engineer
+            </p>
+
+            {/* SKILLS WITH GLASS */}
+            <div className="relative mt-6 sm:mt-10 w-full max-w-7xl px-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+                <div className="bg-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-5 text-center text-white shadow-lg">
+                  <h2 className="text-xl font-bold mb-4">Languages</h2>
+                  <p>Python, Java, C/C++, SQL, JavaScript, TypeScript, HTML, CSS</p>
+                </div>
+                <div className="bg-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-5 text-center text-white shadow-lg">
+                  <h2 className="text-xl font-bold mb-4">Backend Development</h2>
+                  <p>REST APIs, JSON, Postman, Spring Boot, Microservices, Flask</p>
+                </div>
+                <div className="bg-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-5 text-center text-white shadow-lg">
+                  <h2 className="text-xl font-bold mb-4">Frontend Development</h2>
+                  <p>React.js, Usability Testing</p>
+                </div>
+                <div className="bg-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-5 text-center text-white shadow-lg">
+                  <h2 className="text-xl font-bold mb-4">Python Libraries</h2>
+                  <p>OpenCV, Matplotlib, Pandas, Numpy, Scikit</p>
+                </div>
+                <div className="bg-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-5 text-center text-white shadow-lg sm:col-span-2 lg:col-span-1">
+                  <h2 className="text-xl font-bold mb-4">Databases, Cloud & Tools</h2>
+                  <p>PostgreSQL, MySQL, AWS (basic), GCP, Docker, Git, Linux, Cloudflare Workers, LLMs</p>
+                </div>
               </div>
             </div>
+
           </div>
 
         </div>
-
       </div>
-    </div>
+      <Timeline />
+
+      <Projects />
+      <ContactForm />
+
+      <footer>
+        <p>© 2025 Nooreen. All Rights Reserved. Fluid Glass, Fluid Ether credit to React Bits</p>
+      </footer>
+    </>
   );
 }

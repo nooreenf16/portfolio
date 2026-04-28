@@ -1,6 +1,6 @@
-import PromptInfoPage from "../components/PromptInfo";
-import SavedResponsesPage from "../components/SavedResp";
-import "../app/globals.css";
+import PromptInfoPage from "../../components/PromptInfo";
+import SavedResponsesPage from "../../components/SavedResp";
+import "../../app/globals.css";
 
 export default function DocsHome() {
     return (
@@ -18,7 +18,6 @@ export default function DocsHome() {
 
             <main className="max-w-5xl mx-auto px-6 py-10 space-y-12">
 
-                {/* DESCRIPTION SECTION */}
 
                 {/* PREVIEW IMAGES SECTION */}
                 <section className="bg-white rounded-xl shadow p-6 space-y-4">

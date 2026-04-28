@@ -9,35 +9,35 @@ export default function Projects() {
         {
             title: "Multiple Partial Object Detection in a Single Image using Segmentation and Elliptical Symmetry - Research",
             github: "https://github.com/nooreenf16/Multiple-Partial-Object-Detection",
-            imgPath: "assets/beeproject.png",
+            imgPath: "/assets/beeproject.png",
             desc: "A software which uses image processing and geometric operations to identify the location & labeling of objects in image • Implemented using segmentation of all objects, image reconstruction and performing a detection algorithm.",
             tools: "Python, Numpy, openCV, Math."
         },
         {
             title: "Event Management Website ( Full Stack )",
             github: "https://github.com/nooreenf16/EventManagement",
-            imgPath: "assets/event.png",
+            imgPath: "/assets/event.png",
             desc: "• A website used to manage all events on user and admin end with dynamic user interface and multiple endpoints. • Designed responsive frontend using Figma, HTML, CSS, JavaScript, Bootstrap. • Integrated Flask backend, MySQL database, and REST APIs for data management and authentication services.",
             tools: "PostGres, Flask, JWT, Authentication, Routing, JS, Bootstrap, "
         },
         {
             title: "Course Management System (Java Springboot Backend)",
             github: "https://github.com/nooreenf16/Course-Management",
-            imgPath: "assets/java.png",
+            imgPath: "/assets/java.png",
             desc: "Developed a Backend course management service (repo: Course-Management), using Java for backend logic, enabling CRUD operations for students, courses and enrollments. • Designed architecture for scalability and maintainability: clear separation of concerns, data models and user interface.",
             tools: "Java, Springboot, Kafka, Docker, Microservices"
         },
         {
             title: "Vehicle Classification and Counting",
             github: "https://github.com/nooreenf16/Vehicle-Classification-and-Counting",
-            imgPath: "assets/vehicle.png",
+            imgPath: "/assets/vehicle.png",
             desc: "• Authored a Python solution (repo: Vehicle-Classification-and-Counting) for classNameifying vehicles and counting traffic flow from video/image data—useful in smart-city and traffic-monitoring contexts. • Processed real-world data, extracted features, and developed evaluation metrics to validate classNameification and counting accuracy.",
             tools: "Python, Numpy, openCV, Math, YOLO algorithm."
         },
         {
             title: "NLP Project",
             github: "https://github.com/nooreenf16/useful-scripts",
-            imgPath: "assets/nlp.png",
+            imgPath: "/assets/nlp.png",
             desc: "• Built a collection of machine-learning and data-science projects (repo: ML-and-DS) using Jupyter notebooks: data cleaning, feature engineering, model training and evaluation across different datasets. • Showcased versatility in regression, classNameification and clustering workflows.",
             tools: "Python, Numpy, Pandas, Scikit, Matplotlib, Machine Learning Algorithms"
         },
