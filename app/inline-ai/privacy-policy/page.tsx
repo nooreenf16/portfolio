@@ -20,14 +20,14 @@ export default function PrivacyPolicyPage() {
                     </p>
                 </section>
 
-                <Section title="1. Information We Collect">
+                <Section title="1. Information We Use">
                     <ul className="list-disc pl-5 space-y-2">
                         <li><strong>Selected Text:</strong> Text you highlight on a webpage</li>
                         <li><strong>User Prompts:</strong> Questions or instructions you provide</li>
                         <li><strong>AI Responses:</strong> Generated responses from the AI model</li>
                         <li><strong>API Key:</strong> Your Groq API key, stored locally in your browser</li>
                     </ul>
-                    <p>
+                    <p className="mt-3">
                         Inline AI does not collect or store personal data on external servers.
                     </p>
                 </Section>

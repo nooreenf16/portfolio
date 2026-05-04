@@ -41,10 +41,12 @@ export const ContactForm: React.FC = () => {
     return (
         <section id="contact" className="flex justify-center items-center min-h-screen bg-gradient-to-tr from-[#0a0a0a] via-[#0a0a0a] to-[#500140] px-6">
             <form onSubmit={handleSubmit} className="w-full max-w-lg bg-white/5 backdrop-blur-md border border-white/20 rounded-xl p-8 shadow-lg">
-                <h2 className="text-3xl font-bold text-white mb-6 text-center">Contact Me</h2>
+                <h2 className="text-3xl font-bold text-white text-center">Contact Me </h2>
+
+                <div className="text-sm text-center text-gray-400 my-2">(nooreenf16@gmail.com)</div>
 
                 {/* Name */}
-                <div className="mb-4">
+                <div className="my-4">
                     <label className="block text-white mb-2" htmlFor="name">
                         Name
                     </label>

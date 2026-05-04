@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function PromptInfoPage() {
     return (
         <div className="min-h-screen bg-gray-50 p-6 md:p-10">
@@ -53,14 +54,14 @@ export default function PromptInfoPage() {
                         history or unrelated page data is shared. Your API key is stored locally in your browser.
                     </p>
                     <p className="text-gray-700">
-                        Inline AI is not open source and is distributed as a closed extension.
+                        Inline AI is not open source and is distributed as a closed extension. Read more at: <a className="text-blue-600 underline" href="/inline-ai/privacy-policy">here</a>
                     </p>
                 </div>
 
                 <div className="flex justify-end">
-                    <button className="px-4 py-2 rounded-lg bg-black text-white hover:bg-gray-800">
+                    <Link href="/" className="px-4 py-2 rounded-lg bg-black text-white hover:bg-gray-800">
                         Back to Portfolio Website
-                    </button>
+                    </Link>
                 </div>
 
             </div>
