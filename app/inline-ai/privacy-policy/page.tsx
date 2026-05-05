@@ -25,7 +25,7 @@ export default function PrivacyPolicyPage() {
                         <li><strong>Selected Text:</strong> Text you highlight on a webpage</li>
                         <li><strong>User Prompts:</strong> Questions or instructions you provide</li>
                         <li><strong>AI Responses:</strong> Generated responses from the AI model</li>
-                        <li><strong>API Key:</strong> Your Groq API key, stored locally in your browser</li>
+                        <li><strong>API Key:</strong> Your Groq API key, encrypted and stored locally in your browser - coming soon</li>
                     </ul>
                     <p className="mt-3">
                         Inline AI does not collect or store personal data on external servers.
@@ -36,7 +36,7 @@ export default function PrivacyPolicyPage() {
                     <ul className="list-disc pl-5 space-y-2">
                         <li>Generate AI responses based on selected text and prompts</li>
                         <li>Display results within the extension interface</li>
-                        <li>Allow optional saving of responses</li>
+                        <li>Allow optional saving of responses locally (not on any external server)</li>
                     </ul>
                 </Section>
 
@@ -73,7 +73,7 @@ export default function PrivacyPolicyPage() {
 
                 <Section title="7. Security">
                     <ul className="list-disc pl-5 space-y-2">
-                        <li>API keys stored locally</li>
+                        <li>API keys encrypted and stored locally - coming soon</li>
                         <li>HTTPS used for all API communication</li>
                     </ul>
                 </Section>
