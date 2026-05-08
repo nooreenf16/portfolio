@@ -3,6 +3,21 @@ import SavedResponsesPage from "../../components/SavedResp";
 import "../../app/globals.css";
 import About from "@/components/About";
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: 'Inline AI - AI-Powered Web Assistant',
+    description: 'https://nooreen-fatima-portfolio.vercel.app/inline-ai',
+    openGraph: {
+        title: 'Inline AI - AI-Powered Writing Assistant',
+        description: 'An intelligent Chrome extension that lets you interact with AI about any text you select on the web. Ask questions, get explanations, or analyze any content.',
+        url: 'https://nooreen-fatima-portfolio.vercel.app/inline-ai',
+        siteName: 'Inline AI',
+        locale: 'en_US',
+        type: 'website',
+    },
+}
+
 export default function DocsHome() {
     return (
         <div className="min-h-screen bg-gray-100">

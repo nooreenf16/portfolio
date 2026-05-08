@@ -58,6 +58,10 @@ export default function About() {
                         </p>
 
                         <p>
+                            <strong>Manage website access:</strong> Choose and manage which websites the extension runs on
+                        </p>
+
+                        <p>
                             <strong>AI-Powered Responses:</strong> Get instant answers from Groq AI about selected content
                         </p>
 
@@ -70,7 +74,7 @@ export default function About() {
                         </p>
 
                         <p>
-                            <strong>Secure API Management:</strong> Store your Groq API key locally, on your own device
+                            <strong>Secure API Management:</strong> Store your Groq API key locally, on your own device (coming soon)
                         </p>
 
                         <p>
