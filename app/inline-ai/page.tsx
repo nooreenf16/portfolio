@@ -7,14 +7,20 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
     title: 'Inline AI - AI-Powered Web Assistant',
-    description: 'https://nooreen-fatima-portfolio.vercel.app/inline-ai',
+    description: 'An intelligent Chrome extension that lets you interact with AI about any text you select on the web. Ask questions, get explanations, or analyze any content.',
     openGraph: {
-        title: 'Inline AI - AI-Powered Writing Assistant',
+        title: 'Inline AI - AI-Powered Web Assistant',
         description: 'An intelligent Chrome extension that lets you interact with AI about any text you select on the web. Ask questions, get explanations, or analyze any content.',
         url: 'https://nooreen-fatima-portfolio.vercel.app/inline-ai',
         siteName: 'Inline AI',
         locale: 'en_US',
         type: 'website',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Inline AI - AI-Powered Web Assistant',
+        description: 'An intelligent Chrome extension that lets you interact with AI about any text you select on the web. Ask questions, get explanations, or analyze any content.',
+        images: ['https://nooreen-fatima-portfolio.vercel.app/inline-ai-preview.jpg'],
     },
 }
 
