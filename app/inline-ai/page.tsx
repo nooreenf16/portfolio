@@ -32,15 +32,25 @@ export default function DocsHome() {
                     <div className="max-w-5xl mx-auto px-6 py-6">
                         <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
                             Inline AI
-                            <a href="/inline-ai/privacy-policy" className="ml-5 p-2 rounded-xl border border-gray-500 text-sm font-normal">Privacy Policy</a>
                         </h1>
                         <p className="text-gray-600 mt-1">
                             Creator: Nooreen Fatima
+                            <a href="/inline-ai/privacy-policy" className="ml-5 p-2 rounded-xl border border-gray-500 text-sm font-normal">Privacy Policy</a>
+
                         </p>
+
                     </div>
                 </header>
 
                 <main className="max-w-5xl mx-auto px-6 py-10 space-y-12">
+
+                    <section className="hidden">
+                        <p>
+                            Inline AI is a Chrome extension designed to help users interact with AI
+                            directly on any webpage. Your privacy and data security are important,
+                            and this policy explains what information is handled and how it is used.
+                        </p>
+                    </section>
 
                     <section>
                         <About />
