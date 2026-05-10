@@ -41,7 +41,7 @@ export default function SavedResponsesPage() {
                     <h2 className="text-xl font-semibold">Key features</h2>
                     <ul className="list-disc pl-5 text-gray-700 space-y-2">
                         <li><strong>Complete Context:</strong> See original selected text, your prompts, and AI responses together</li>
-                        <li><strong>Search Functionality:</strong> Quickly find past conversations using keywords</li>
+                        <li><strong>Search Functionality:</strong> Quickly find past conversations using keywords (coming soon..)</li>
                         <li><strong>Organized History:</strong> View all saved interactions in chronological order</li>
                         <li><strong>Easy Access:</strong> Open saved responses with one click from the extension popup</li>
                         <li><strong>Delete Management:</strong> Remove unwanted entries to keep your history clean</li>
@@ -52,7 +52,7 @@ export default function SavedResponsesPage() {
                     <h2 className="text-xl font-semibold">Tips for using saved responses</h2>
                     <ul className="list-disc pl-5 text-gray-700 space-y-2">
                         <li>Save responses you might want to reference later instead of re-running prompts</li>
-                        <li>Use search to quickly retrieve insights from long sessions</li>
+                        {/* <li>Use search to quickly retrieve insights from long sessions</li> */}
                         <li>Clean up outdated or irrelevant entries regularly for better organization</li>
                     </ul>
                 </div>

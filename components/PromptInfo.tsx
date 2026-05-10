@@ -43,7 +43,7 @@ export default function PromptInfoPage() {
                         <li>Be specific: &quot;Explain this like I’m new to the topic&quot; works better than &quot;explain this&quot;</li>
                         <li>Ask for format: bullet points, steps, or summaries improve clarity</li>
                         <li>Combine intent + role: &quot;Act like a teacher and explain this&quot;</li>
-                        <li>Use follow-ups instead of long prompts for deeper understanding</li>
+                        {/* <li>Use follow-ups instead of long prompts for deeper understanding</li> */}
                     </ul>
                 </div>
 

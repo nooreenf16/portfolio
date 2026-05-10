@@ -74,7 +74,7 @@ export default function About() {
                         </p>
 
                         <p>
-                            <strong>Secure API Management:</strong> Store your Groq API key locally, on your own device (coming soon)
+                            <strong>Secure API Management:</strong> Store your Groq API key locally, on your own device with full security (coming soon)
                         </p>
 
                         <p>
