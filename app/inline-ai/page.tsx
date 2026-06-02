@@ -35,10 +35,11 @@ export default function DocsHome() {
                         </h1>
                         <p className="text-gray-600 mt-1">
                             Creator: Nooreen Fatima
-                            <a href="/inline-ai/privacy-policy" className="ml-5 p-2 rounded-xl border border-gray-500 text-sm font-normal">Privacy Policy</a>
+                            <a href="/inline-ai/privacy-policy" className="ml-5 p-2 rounded-xl bg-gray-100 hover:bg-gray-200 border border-gray-500 text-sm font-normal">Privacy Policy</a>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf2wxpxne6kg5MU0UBswCgUVkf8rzUV5L3aDlxeL6YwiRaIcA/viewform?usp=publish-editor"
+                                className="ml-5 p-2 rounded-xl border border-gray-500 text-sm font-normal bg-gray-100 hover:bg-gray-200 ">Give Feedback or Report Bugs</a>
 
                         </p>
-
                     </div>
                 </header>
 
