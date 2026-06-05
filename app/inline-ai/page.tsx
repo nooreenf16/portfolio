@@ -2,7 +2,7 @@ import PromptInfoPage from "../../components/PromptInfo";
 import SavedResponsesPage from "../../components/SavedResp";
 import "../../app/globals.css";
 import About from "@/components/About";
-
+import InlineAIHeader from "@/components/InlineAIHeader";
 import Head from 'next/head'
 
 export default function DocsHome() {
@@ -42,6 +42,8 @@ export default function DocsHome() {
                         </p>
                     </div>
                 </header>
+
+                <InlineAIHeader />
 
                 <main className="max-w-5xl mx-auto px-6 py-10 space-y-12">
 
