@@ -1,11 +1,19 @@
+"use client"
 import InlineAIPopUp from "./InlineAIPopUp";
+import CursorStar from "./CursorStar";
+import { useEffect, useRef } from "react";
 
 export default function InlineAIHeader() {
+    const headerRef = useRef<HTMLDivElement>(null);
+    useEffect(() => {
+        const cleanup = CursorStar(headerRef.current!)
+        return cleanup
+    }, [])
     return (
         <>
             <InlineAIPopUp />
 
-            <div className="mt-5 h-[60vh]">
+            <div className="mt-5 h-[60vh]" ref={headerRef}>
                 <div className="w-[80%] mx-auto flex flex-col md:flex-row items-center gap-8 px-8 py-12 h-full">
 
                     <div className="w-[65%] shrink-0">
