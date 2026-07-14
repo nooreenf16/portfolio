@@ -13,7 +13,11 @@ export default function InlineAIHeader() {
         <>
             <InlineAIPopUp />
 
-            <div className="mt-5 h-[60vh]" ref={headerRef}>
+            <div className="bg-red-100 text-center py-2 px-4 text-sm">
+                Inline AI is designed to assist with research, learning, and productivity workflows.
+                It does not support using AI to create, replace, or automate original creative work.
+            </div>
+            <div className="h-[60vh]" ref={headerRef}>
                 <div className="w-[80%] mx-auto flex flex-col md:flex-row items-center gap-8 px-8 py-12 h-full">
 
                     <div className="w-[65%] shrink-0">
