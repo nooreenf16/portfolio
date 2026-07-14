@@ -36,7 +36,7 @@ export default function InlineAIHeader() {
                             Select some text below!
                         </h3>
                         <p className="text-gray-600 mt-1">
-                            Try out a demo of the minified version of the extension here by selecting any text on this page!
+                            Try out a demo of the minified version of the extension here by selecting any text on this header!
                             <br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien eget nunc
                             efficitur tincidunt. Sed at ligula quis sapien bibendum convallis. Aliquam erat volutpat. Curabitur ac ligula nec nunc efficitur tincidunt. Sed at ligula quis sapien bibendum convallis. Aliquam erat volutpat.
                         </p>
